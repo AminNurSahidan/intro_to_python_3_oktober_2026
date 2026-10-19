@@ -18,3 +18,15 @@ nomor = 1
 while nomor <= 10:
     print(f"Index of : {nomor}")
     nomor += 1
+
+print("=====Break and Continue")
+nomor = 1
+while nomor <= 100:
+    if nomor % 2 == 0:
+        nomor += 1
+        continue
+    if nomor >= 20:
+        nomor += 1
+        break
+    print(f"Index of {nomor}")
+    nomor += 1
