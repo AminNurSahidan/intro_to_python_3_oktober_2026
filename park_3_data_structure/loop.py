@@ -19,7 +19,7 @@ while nomor <= 10:
     print(f"Index of : {nomor}")
     nomor += 1
 
-print("=====Break and Continue")
+print("=====Break and Continue=====")
 nomor = 1
 while nomor <= 100:
     if nomor % 2 == 0:

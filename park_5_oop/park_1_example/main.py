@@ -1,11 +1,12 @@
-from src.Mobil import Mobil # pemanggilan class
+from src.Mobil import Mobil
+from src.Ferari import Ferari
 
 if __name__ == "__main__":
     data_mobil = [
         {
         "category" : "Mobil",
         "merek" : "Toyota",
-        "type" : "Supra MK4",
+        "type" : "Supra",
         "color" : "Orange"
         },
         {
@@ -16,15 +17,21 @@ if __name__ == "__main__":
         },
         {
         "category" : "Mobil",
-        "merek" : "Mitsubishi",
+        "merek" : "Mitsubisi",
         "type" : "Lancer",
         "color" : "Merah"
         },
     ]
 
     for value in data_mobil:
+        
         if value["category"] == "Mobil":
             data = Mobil(value['merek'],value['type'],value['color'])
-            # data.velg = "Celong"
-            data._cc_mobil = 7000 # ga bisa karena private variable nya
+            # data.veleg = "Celong"
+            if value['type'] == "Lancer":
+                data.setCC_Mobil(25000)
             data.getProfile()
+          
+        print("======Inheritance======")
+        data = Ferari("Ferari","testarossa","Bensin")
+        data.getProfile()
