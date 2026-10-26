@@ -5,3 +5,7 @@ class Ferari(Mobil):
         self.bbm = bahan_bakar
     def getKelakson(self):
         print("Bunyi Kelason : Wooffffff!!!!!")
+    # override
+    def getProfile(self):
+        print(f"Bahan Bakar\t: {self.bbm}")
+        super().getProfile()

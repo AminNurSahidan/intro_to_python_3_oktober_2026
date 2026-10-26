@@ -28,3 +28,5 @@ class Mobil:
     # set di gunakan untuk merubah data
     def setCC_Mobil(self,new_cc):
         self._cc_mobil = new_cc
+    def getKelakson(self):
+        print("Belum ada data")
